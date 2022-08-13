@@ -1,16 +1,16 @@
 from weapon import Weapon
-
+from dinosaur import Dinosaur
 
 class Robot:
 
-    def __init__(self):
-        self.name = "Bender"
+    def __init__(self, name):
+        self.name = name
         self.health = 100
+        self.active_weapon = Weapon('Lazer Beam', 50)
         pass
 
-    def active_weapon(self):
-        active_wepoon = Weapon()
 
     def attack(self, dinosaur):
-        self.attack_dino
+        if dinosaur.attack_power
+        
         

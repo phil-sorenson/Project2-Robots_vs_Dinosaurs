@@ -3,12 +3,15 @@ from dinosaur import Dinosaur
 
 
 class Battlefield:
+    
+
     def __init__(self):
-        self.
+        self.robot = Robot('Bender')
+        self.dinosaur = Dinosaur('Godzilla', )
 
 
     def run_game(self):
-        self.begin
+        
 
 
 
