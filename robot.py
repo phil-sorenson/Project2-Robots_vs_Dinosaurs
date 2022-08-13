@@ -10,5 +10,5 @@ class Robot:
 
 
     def attack(self, dinosaur):
-        self.
+        self.attack_dino
         

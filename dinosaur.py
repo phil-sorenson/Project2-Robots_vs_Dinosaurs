@@ -9,5 +9,5 @@ class Dinosaur:
         pass
 
     def attack(self, robot):
-        self.attack_robot = 
+        self.attack_robot
         
