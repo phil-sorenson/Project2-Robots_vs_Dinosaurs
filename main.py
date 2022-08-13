@@ -4,6 +4,7 @@
 # (10 points): As a developer, I want a Robot to have a name, health, and active_weapon. 
 # (10 points): As a developer, I want a Weapon to have a name and attack_power.   
 # (10 points): As a developer, I want a Dinosaur to have the ability to attack a Robot on a Battlefield. This attack method should lower a Robot’s health by the value of the Dinosaur’s attack_power. 
+        # Ideas on how to code: current_health - attack_power = depleted_health
 # (10 points): As a developer, I want a Robot to have the ability to attack a Dinosaur on a Battlefield. This attack method should lower the Dinosaur’s health by the attack_power of the Robot’s active_weapon. 
 # (10 points): As a developer, I want the battle to conclude once either the robot or the dinosaur has its health points reduced to zero.
             # # # Bonus Points: 
@@ -15,8 +16,8 @@
 
 from battlefield import Battlefield
 
-bf1 = Battlefield()
-bf1.run_game()
+battlefield_one = Battlefield()
+battlefield_one.run_game()
 
 
 

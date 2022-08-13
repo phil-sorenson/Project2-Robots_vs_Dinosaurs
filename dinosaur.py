@@ -1,3 +1,5 @@
+
+
 class Dinosaur:
 
     def __init__(self, name, attack_power):
@@ -6,5 +8,6 @@ class Dinosaur:
         self.health = 100
         pass
 
-    def attack(self):
+    def attack(self, robot):
+        self.attack_robot = 
         
