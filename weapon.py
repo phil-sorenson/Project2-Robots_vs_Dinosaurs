@@ -2,8 +2,6 @@ class Weapon:
 
     def __init__(self, name, attack_power):
         self.name = 'Lazer Beam'
-        self.attack_power = attack_power
+        self.attack_power = 50
         pass
 
-    def active_weapon(self):
-        self.weapon_name = 

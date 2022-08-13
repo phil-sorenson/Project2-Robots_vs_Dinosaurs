@@ -2,7 +2,7 @@
 
 class Dinosaur:
 
-    def __init__(self, name, attack_power):
+    def __init__(self, attack_power):
         self.name = "Godzilla"
         self.attack_power = attack_power
         self.health = 100
