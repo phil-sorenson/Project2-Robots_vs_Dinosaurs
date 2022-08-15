@@ -4,10 +4,11 @@ from dinosaur import Dinosaur
 
 class Battlefield:
     
-
+    robot = Robot('Bender')
+    dinosaur = Dinosaur('Godzilla', 50)
+    
     def __init__(self):
-        self.robot = Robot('Bender')
-        self.dinosaur = Dinosaur('Godzilla', )
+       
 
 
     def run_game(self):

@@ -9,8 +9,17 @@ class Robot:
         self.active_weapon = Weapon('Lazer Beam', 50)
         pass
 
-
+   
     def attack(self, dinosaur):
         if dinosaur.attack_power
+
+        
+        
+        
+
+
+
+
+    
         
         
