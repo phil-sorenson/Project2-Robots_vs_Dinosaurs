@@ -4,11 +4,13 @@ from dinosaur import Dinosaur
 
 class Battlefield:
     
-    robot = Robot('Bender')
-    dinosaur = Dinosaur('Godzilla', 50)
+    robot = Robot("Bender")
+    dinosaur = Dinosaur("Godzilla", 50) # QQQ What is the best way instantiate the robot and dino? This? or with the __init__ function
     
     def __init__(self):
-       
+       self.robot = Robot('Bender')
+       self.dinosaur = Dinosaur('Godzilla', 50)
+    
 
 
     def run_game(self):
@@ -21,7 +23,8 @@ class Battlefield:
 
     
     def battle_phase(self):
-        self.battle
+       
+        
 
 
     def display_winner(self):
