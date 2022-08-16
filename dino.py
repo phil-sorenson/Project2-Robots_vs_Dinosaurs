@@ -1,5 +1,6 @@
 from robot import Robot
 
+
 class Dinosaur:
 
     def __init__(self, name, attack_power):
@@ -9,5 +10,6 @@ class Dinosaur:
         pass
 
     def attack(self, robot):
-        self.opponent = robot  
-        
+        self.robot = Robot("Bender")
+        pass
+    attack()
