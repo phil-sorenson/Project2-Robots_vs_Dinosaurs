@@ -1,4 +1,4 @@
-from robot import Robot
+from robo import Robot
 
 
 class Dinosaur:
@@ -12,4 +12,4 @@ class Dinosaur:
     def attack(self, robot):
         self.robot = Robot("Bender")
         pass
-    attack()
+    
