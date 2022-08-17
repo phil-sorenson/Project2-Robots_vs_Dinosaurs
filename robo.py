@@ -5,7 +5,8 @@ from weapon import Weapon
 
 
 class Robot:
-    
+
+   
   
     def __init__(self, name):
         self.name = name
@@ -16,13 +17,12 @@ class Robot:
     
     def attack(self, dinosaur):
         dinosaur.health -= self.active_weapon.attack_power
-        print(dinosaur.health)
-    
+        
+        
+        
        
         
-    
-        # print(f'{self.name} attacked {dinosaur.name} with {self.active_weapon.name} for {self.active_weapon.attack_power} damage!')
-        # print(f'{dinosaur.name} has {dinosaur.health - self.active_weapon.attack_power} health remaining! ')
+
         
 
         
