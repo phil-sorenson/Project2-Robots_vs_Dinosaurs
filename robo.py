@@ -10,13 +10,19 @@ class Robot:
   
     def __init__(self, name):
         self.name = name
-        self.health = 100
+        self.health = 100            # Should Health be left open bracket? or should I set a health?
         self.active_weapon = Weapon('Lazer Beam', 50)
         pass
          
     
-    def attack(self, dinosaur):
+    def attack_dino(self, dinosaur):
         dinosaur.health -= self.active_weapon.attack_power
+        if dinosaur.health > 0:
+            print(f'{self.name} attacked {self.dinosaur.name} with {self.active_weapon.name} for {self.active_weapon.attack_power} damage!')
+            print(f'{dinosaur.name} health is now {dinosaur.health}' )
+    
+
+       
         
         
         

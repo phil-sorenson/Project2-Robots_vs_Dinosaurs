@@ -11,8 +11,16 @@ class Dinosaur:
         self.health = 100
         pass
 
-    def attack(self, robot):
+    def attack_robot(self, robot):
         robot.health -= self.attack_power
+        if robot.health > 0:
+            while True:
+                print(f'{self.name} attacked {robot.name} for {self.attack_power} damage! ')
+                print(f'{robot.name} health is now {robot.health}! ' )
+        else:
+            print
+    
+
         
 
     
