@@ -1,15 +1,15 @@
 
 from robo import Robot
 from dino import Dinosaur
-from weapon import Weapon
+
 
 class Battlefield:
       
       
    robot = Robot("Bender")
    dinosaur = Dinosaur("Godzilla", 50)
-   dinosaur.attack(robot)
-   robot.attack(dinosaur)
+   # dinosaur.attack_robot(robot)
+   # robot.attack_dino(dinosaur)
  
    
    def __init__(self):
@@ -17,6 +17,7 @@ class Battlefield:
       self.robot = Robot("Bender")
          
    def run_game(self):
+
       input('If you are ready to begin, press "Enter" ')
       self.display_welcome()
       self.battle_phase()
@@ -27,10 +28,11 @@ class Battlefield:
          
 
    def battle_phase(self):     
-      if self.robot.health == 100:
-         print(f'{self.dinosaur.name} attacks {self.robot.name} for {self.dinosaur.attack_power} damage! ')
-         print(f'{self.robot.name} has {self.robot.health - self.dinosaur.attack_power} health remaining! ')
-         
+      while self.robot.health > 0 and self.dinosaur.health > 0 :
+         # print(f'{self.dinosaur.name} attacks {self.robot.name} for {self.dinosaur.attack_power} damage! ')
+         # print(f'{self.robot.name} has {self.robot.health - self.dinosaur.attack_power} health remaining! ')
+         self.robot.attack_dino(self.dinosaur)
+         self.dinosaur.attack_robot(self.robot)
         
           
       print(f'{self.robot.name} attacked {self.dinosaur.name} with {self.active_weapon.name} for {self.active_weapon.attack_power} damage!')
