@@ -6,18 +6,15 @@ from dino import Dinosaur
 class Battlefield:
       
       
-   robot = Robot("Bender")
-   dinosaur = Dinosaur("Godzilla", 50)
-   dinosaur.attack(robot)
-   robot.attack(dinosaur)
+   # robot = Robot("Bender")
+   # dinosaur = Dinosaur("Godzilla", 50)
+   # dinosaur.attack(robot)
+   # robot.attack(dinosaur)
  
    
    def __init__(self):
-      self.run_game()
-      self.display_welcome()
-      self.battle_phase()
-      self.display_winner()
-
+      self.robot = Robot("Bender").attack()
+      self.dinosaur = Dinosaur("Godzilla", 50).attack()
      
          
    def run_game(self):
