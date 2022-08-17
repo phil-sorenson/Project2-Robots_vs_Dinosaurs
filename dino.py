@@ -12,10 +12,10 @@ class Dinosaur:
         pass
 
     def attack(self, robot):
-        
-        print(f'{self.name} attacks {self.robot.name} for {self.attack_power} damage! ')
-        self.robot_health_remaining = (self.robot.health) - (self.attack_power)
-        print(f'{self.robot.name} has {self.robot_health_remaining} health remaining! ')
+        robot.health -= self.attack_power
+        print(f'{self.name} attacks {robot.name} for {self.attack_power} damage! ')
+        self.robot_health_remaining = (robot.health) - (self.attack_power)
+        print(f'{robot.name} has {self.robot_health_remaining} health remaining! ')
         pass
 
         

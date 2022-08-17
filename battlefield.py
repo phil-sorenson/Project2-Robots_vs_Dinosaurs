@@ -1,3 +1,4 @@
+from urllib import robotparser
 from robo import Robot
 from dino import Dinosaur
 
@@ -9,10 +10,12 @@ class Battlefield:
    robot = Robot("Bender")
    dinosaur = Dinosaur("Godzilla", 50)
    
+   robot.attack(dinosaur)
+   dinosaur.attack(robot)
+   
  
-   def __init__(self):
-      self.robot = Robot('Bender') 
-      self.dinosaur = Dinosaur('Godzilla', 50)
+   # def __init__(self):
+      
    
     
 
@@ -32,4 +35,3 @@ class Battlefield:
 
 
    # def display_winner(self):
-   #    self.winner
