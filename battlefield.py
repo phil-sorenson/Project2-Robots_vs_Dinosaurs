@@ -8,8 +8,7 @@ class Battlefield:
       
    robot = Robot("Bender")
    dinosaur = Dinosaur("Godzilla", 50)
-   # dinosaur.attack_robot(robot)
-   # robot.attack_dino(dinosaur)
+
  
    
    def __init__(self):
@@ -36,21 +35,21 @@ class Battlefield:
          self.dinosaur.attack_robot(self.robot)
          if self.robot.health == 0:
             self.display_winner()
-         break
+            break
             
          
         
+   def display_winner(self):
+      if self.robot.health == 0:
+         print(f'{self.dinosaur.name} has emerged victorious! ')
+      elif self.dinosaur.health == 0:
+         print(f'{self.robot.name} has emergerd victorious! ')
       
    
          
        
 
       
-   def display_winner(self):
-      if self.robot.health == 0:
-         print(f'{self.dinosaur.name} has emerged victorious! ')
-      elif self.dinosaur.health == 0:
-         print(f'{self.robot.name} has emergerd victorious! ')
     
       
          

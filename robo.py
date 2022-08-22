@@ -20,8 +20,8 @@ class Robot:
         print(f'{self.name} attacked {dinosaur.name} with {self.active_weapon.name} for {self.active_weapon.attack_power} damage!')
         print(f'{dinosaur.name} has {dinosaur.health} health remaining! ')
 
-        # print(f'{self.name} attacked {dinosaur.name} with {self.active_weapon.name} for {self.active_weapon.attack_power} damage!')
-        # print(f'{dinosaur.name} has {dinosaur.health} health remaining! ')
+   # QQQ since 'dinosaur' is parameter, we will have to be re-calling it elsewhere (maybe battlefield attack sequence?)
+   # QQQ Since attack_power is defined in Battlefield module, how can I pull that info to be used in Robot attack function?
        
 
     
@@ -43,8 +43,6 @@ class Robot:
 
         
 
-   # QQQ since 'dinosaur' is parameter, we will have to be re-calling it elsewhere (maybe battlefield attack sequence?)
-   # QQQ Since attack_power is defined in Battlefield module, how can I pull that info to be used in Robot attack function?
         
         
 
