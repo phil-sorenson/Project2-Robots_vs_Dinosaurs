@@ -18,9 +18,10 @@ class Robot:
     def attack_dino(self, dinosaur):
         dinosaur.health -= self.active_weapon.attack_power
         print(f'{self.name} attacked {dinosaur.name} with {self.active_weapon.name} for {self.active_weapon.attack_power} damage!')
-        print(f'{dinosaur.name} has {dinosaur.health - self.active_weapon.attack_power} health remaining! ')
+        print(f'{dinosaur.name} has {dinosaur.health} health remaining! ')
+
         # print(f'{self.name} attacked {dinosaur.name} with {self.active_weapon.name} for {self.active_weapon.attack_power} damage!')
-        # print(f'{dinosaur.name} has {dinosaur.health - self.active_weapon.attack_power} health remaining! ')
+        # print(f'{dinosaur.name} has {dinosaur.health} health remaining! ')
        
 
     
