@@ -20,7 +20,7 @@ class Battlefield:
       input('If you are ready to begin, press "Enter" ')
       self.display_welcome()
       self.battle_phase()
-      self.display_winner()
+      # self.display_winner()
 
    def display_welcome(self):
          print('\nWelcome to the battle of the ages! \nOnly one can win!\n')     # \n allows their to be a break in the line 
@@ -42,9 +42,9 @@ class Battlefield:
    def display_winner(self):
       if self.robot.health == 0:
          print(f'{self.dinosaur.name} has emerged victorious! ')
-      elif self.dinosaur.health == 0:
-         print(f'{self.robot.name} has emergerd victorious! ')
       
+      if self.dinosaur.health == 0:
+         print(f'{self.robot.name} has emergerd victorious! ')
    
          
        
