@@ -28,21 +28,19 @@ class Battlefield:
          
 
    def battle_phase(self):     
-      while self.robot.health > 0 and self.dinosaur.health > 0 :
+      while self.robot.health > 0 and self.dinosaur.health > 0:
          # print(f'{self.dinosaur.name} attacks {self.robot.name} for {self.dinosaur.attack_power} damage! ')
          # print(f'{self.robot.name} has {self.robot.health - self.dinosaur.attack_power} health remaining! ')
          self.robot.attack_dino(self.dinosaur)
          self.dinosaur.attack_robot(self.robot)
+         self.robot.attack_dino(self.dinosaur)
         
           
-      print(f'{self.robot.name} attacked {self.dinosaur.name} with {self.active_weapon.name} for {self.active_weapon.attack_power} damage!')
-      print(f'{self.dinosaur.name} has {self.dinosaur.health - self.active_weapon.attack_power} health remaining! ')
+      
 
-      print(f'{self.dinosaur.name} attacks {self.robot.name} for {self.attack_power} damage! ')
-      print(f'{self.robot.name} has {self.robot.health - self.attack_power} health remaining! ')
+      
 
-      print(f'{self.name} attacked {self.dinosaur.name} with {self.active_weapon.name} for {self.active_weapon.attack_power} damage!')
-      print(f'{self.dinosaur.name} has {self.dinosaur.health - self.active_weapon.attack_power} health remaining! ')
+      
 
 
 
